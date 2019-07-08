@@ -21,6 +21,8 @@
     "@angular/platform-browser-dynamic": "^7.1.3",
     "@angular/router": "^7.1.3",
     "@lightweightform/bootstrap-theme": "4.0.0-dev.15",
+    "@lightweightform/core": "4.0.0-dev.15",
+    "@lightweightform/storage": "4.0.0-dev.15",
     "@types/bootstrap": "4.3.0",
     "core-js": "2.5.4",
     "date-fns": "2.0.0-alpha.9",
