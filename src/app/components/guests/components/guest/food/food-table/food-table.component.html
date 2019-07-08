@@ -1,0 +1,16 @@
+<ng-container *mobxAutorun>
+  <lf-table #lfTable [path]="path">
+    <lf-table-header>
+      <lf-table-column id = "index"></lf-table-column>
+      <lf-table-column id = "date"></lf-table-column>
+      <lf-table-column id = "typeOfFood"></lf-table-column>
+    </lf-table-header>  
+    <ng-template #lfTableRowTemplate  let-id="id" let-i="index">
+      <tr lfTableRow [path]="id" >
+        <td lfTableCell>{{i + 1}}</td>
+        <td lfTableCell><lf-date path = "date"></lf-date></td>
+        <td lfTableCell><lf-select path="typeOfFood"></lf-select></td>
+      </tr>
+    </ng-template>
+  </lf-table>
+</ng-container>

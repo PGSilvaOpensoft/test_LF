@@ -6,5 +6,6 @@ import {Component} from '@angular/core';
   styleUrls: ['./guests.component.scss'],
 })
 export class GuestsComponent {
-  constructor() {}
+  constructor(){}
+
 }
