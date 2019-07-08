@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./packages",
+    "declaration": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [
+      "es6",
+      "dom"
+    ],
+    "moduleResolution": "node",
+    "noFallthroughCasesInSwitch": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "paths": {},
+    "preserveWatchOutput": true,
+    "pretty": true,
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es5",
+    "module": "es2015"
+  }
+}

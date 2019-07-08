@@ -1,0 +1,29 @@
+<lf-app #lfApp *mobxAutorun>
+
+  <lf-top-bar [actions]="actions">
+      <div class="d-none d-md-block"><lf-i18n key="appTitleLg"></lf-i18n></div>
+      <div class="d-md-none"><lf-i18n key="appTitleSm"></lf-i18n></div>
+  </lf-top-bar>
+
+  <lf-title>
+    LF self check-in app
+  </lf-title>
+
+  <lf-tree-nav></lf-tree-nav>
+  <router-outlet></router-outlet>
+</lf-app>  
+
+<!-- Modals to show application's schema and value -->
+<!-- <lf-modal #schemaModal size="lg">
+    <lf-modal-header>Schema</lf-modal-header>
+    <lf-modal-body>
+      <pre>{{lfStorage.schemaAsJSON() | json}}</pre>
+    </lf-modal-body>
+  </lf-modal>
+  
+  <lf-modal #valueModal size="lg">
+    <lf-modal-header>Value</lf-modal-header>
+    <lf-modal-body>
+      <pre>{{lfStorage.getAsJSON() | json}}</pre>
+    </lf-modal-body>
+  </lf-modal> -->
