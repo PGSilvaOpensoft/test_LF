@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '../checkpoints/checkpoint3/end/src/app/components/reservation-details/components/accommodation/node_modules/@angular/core/testingoint3/end/src/app/components/reservation-details/components/accommodation/node_modules/@angular/core/testing';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AccommodationComponent } from './accommodation.component';
 

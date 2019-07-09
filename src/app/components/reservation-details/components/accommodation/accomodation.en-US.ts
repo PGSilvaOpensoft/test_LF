@@ -1,4 +1,4 @@
-import { LfI18n } from "@lightweightform/core";
+import{LfI18n} from "@lightweightform/core";
 import { I18N_VALUE_LABEL_KEY } from "@lightweightform/bootstrap-theme";
 
 const myColumnLabels = {

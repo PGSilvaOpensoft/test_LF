@@ -9,13 +9,35 @@ export const foodSchema = recordSchema({
         textBox : true,
     }),
     totalPrice: numberSchema({
-        computedValue : calcPrice(),
+        computedValue : totalPrice(),
         isNullable : true,
         isInteger : false,
-    }),
+    })
+    
+    
 }, {isForm: true,
     });
 
-function calcPrice() {
-    return () => {return 0};
+    
+function sumPrices(arr: any[]): number {
+    if (arr === null) {
+      return 0;
+    }
+
+    let sum = 0;
+    for (const l of arr) {
+      sum += l.price;
+    }
+    return sum;
+}
+
+function totalPrice() {
+    return ctx => {
+      const food = ctx.get();
+      return (
+        sumPrices(food.breakfastTable) +
+        sumPrices(food.lunchTable) +
+        sumPrices(food.dinnerTable)
+      );
+    };
 }
