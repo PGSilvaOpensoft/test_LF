@@ -21,7 +21,7 @@
     "@angular/platform-browser": "~8.1.0",
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
-    "@lightweightform/bootstrap-theme": "4.0.0-beta.c5087706",
+    "@lightweightform/bootstrap-theme": "4.0.0-dev.16",
     "@lightweightform/core": "4.0.0-beta.c5087706",
     "@lightweightform/storage": "4.0.0-beta.c5087706",
     "@types/bootstrap": "4.3.0",
