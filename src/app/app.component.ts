@@ -1,14 +1,15 @@
 import {Component, ViewChild} from '@angular/core';
 import {LfFileStorage, LfStorage, LfI18n} from '@lightweightform/core';
-import {AppComponent as LfAppComponent} from '@lightweightform/bootstrap-theme';
+import {
+  AppComponent as LfAppComponent /* ModalComponent*/,
+} from '@lightweightform/bootstrap-theme';
 
 @Component({
   selector: 'sc-root',
   templateUrl: './app.component.html',
-  styleUrls: ["./app.component.scss"],
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-
   actions = [
     {
       id: 'save',
@@ -55,16 +56,37 @@ export class AppComponent {
     },
     {
       id: 'submit',
-      text: "Submit",
-      style: "outline-success",
-      icon: "send",
+      text: 'Submit',
+      style: 'outline-success',
+      icon: 'send',
       callback: () => {
         this.submit();
-      }
+      },
     },
+    /* {
+      id: 'schema',
+      label: 'Schema',
+      faIcon: 'bug',
+      isVertical: true,
+      callback: () => {
+        this._schemaModal.show();
+      },
+    },
+    {
+      id: 'value',
+      label: 'Value',
+      faIcon: 'bug',
+      isVertical: true,
+      callback: () => {
+        this._valueModal.show();
+      },
+    },*/
   ];
 
   @ViewChild(LfAppComponent) private lfApp: LfAppComponent;
+  /*Modals components*/
+  //@ViewChild('valueModal') protected _valueModal: ModalComponent;
+  //@ViewChild('schemaModal') protected _schemaModal: ModalComponent;
 
   constructor(
     public lfStorage: LfStorage,
@@ -74,17 +96,17 @@ export class AppComponent {
 
   submit() {
     if (!this.lfStorage.hasErrors()) {
-      fetch("https://selfcheckin.opensoft.pt/reservations", {
-        method: "POST",
+      fetch('https://selfcheckin.opensoft.pt/reservations', {
+        method: 'POST',
         headers: {
-          "Content-Type": "application/json"
+          'Content-Type': 'application/json',
         },
         body: JSON.stringify(this.lfStorage.getAsJSON()),
-        mode: "cors"
+        mode: 'cors',
       })
         .then(response => {
           console.log(response);
-          alert("Check-in successful. Enjoy your stay.");
+          alert('Check-in successful. Enjoy your stay.');
         })
         .catch(ex => {
           console.log(ex);

@@ -1,0 +1,19 @@
+<lf-form path="reservationDetails/accomodation">
+  <lf-table path="accomodationsTable">
+    <lf-table-header>
+      <lf-table-column id="index"></lf-table-column>
+      <lf-table-column id="roomType"></lf-table-column>
+      <lf-table-column id="cleaningService"></lf-table-column>
+      <lf-table-column id="smoker"></lf-table-column>
+    </lf-table-header>
+
+    <ng-template #lfTableRowTemplate let-id="id" let-i="index">
+      <tr lfTableRow [path]="id">
+        <td lfTableCell>{{ i + 1 }}</td>
+        <td lfTableCell><lf-select path="roomType"></lf-select></td>
+        <td lfTableCell><lf-checkbox path="cleaningService"></lf-checkbox></td>
+        <td lfTableCell><lf-checkbox path="smoker"></lf-checkbox></td>
+      </tr>
+    </ng-template>
+  </lf-table>
+</lf-form>

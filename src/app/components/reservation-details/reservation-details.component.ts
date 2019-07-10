@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'sc-reservation-details',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./reservation-details.component.scss'],
 })
 export class reservationDetailsComponent {
-  constructor() { }
+  constructor() {}
 }
