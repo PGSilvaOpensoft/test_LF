@@ -83,7 +83,7 @@ export class AppComponent {
     },*/
   ];
 
-  @ViewChild(LfAppComponent, {static: false}) private lfApp: LfAppComponent;
+  @ViewChild('lfApp', {static: false}) private lfApp: LfAppComponent;
   /*Modals components*/
   //@ViewChild('valueModal') protected _valueModal: ModalComponent;
   //@ViewChild('schemaModal') protected _schemaModal: ModalComponent;
