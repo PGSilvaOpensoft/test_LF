@@ -17,7 +17,7 @@ export class AppComponent {
       icon: 'save',
       callback: async () => {
         const dateStr = new Date().toISOString().replace(/:|\./g, '-');
-        const fileName = `census-${dateStr}.json`;
+        const fileName = `self-check-in-${dateStr}.json`;
         try {
           await this.lfFileStorage.saveToFile('/', fileName);
           console.log('Value saved successfully');
