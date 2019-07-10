@@ -1,6 +1,6 @@
-import {Component, Input, ViewChild} from '@angular/core';
+import {Component, Input /*, ViewChild*/} from '@angular/core';
 import {observable} from 'mobx';
-import {TableComponent} from '@lightweightform/bootstrap-theme';
+//import {TableComponent} from '@lightweightform/bootstrap-theme';
 import {computed} from 'mobx-angular';
 
 @Component({
@@ -13,7 +13,7 @@ export class FoodTableComponent {
   @Input()
   path: string;
 
-  @ViewChild('lfTable', {static: false}) lfTable: TableComponent;
+  //@ViewChild('lfTable', {static: false}) lfTable: TableComponent;
 
   @computed
   public get subTotalName() {

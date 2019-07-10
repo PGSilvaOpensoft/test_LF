@@ -25,14 +25,14 @@
     "@lightweightform/core": "4.0.0-beta.c5087706",
     "@lightweightform/storage": "4.0.0-beta.c5087706",
     "@types/bootstrap": "4.3.0",
-    "core-js": "2.6.9",
+    "core-js": "2.5.4",
     "date-fns": "2.0.0-alpha.9",
     "mobx": "^5.9.4",
     "mobx-angular": "3.0.1",
-    "mobx-utils": "^5.0.0",
+    "mobx-utils": "5.0.0",
     "ngx-bootstrap": "3.0.1",
-    "rxjs": "6.5.2",
-    "zone.js": "0.9.1"
+    "rxjs": "~6.3.3",
+    "zone.js": "~0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.13.7",
