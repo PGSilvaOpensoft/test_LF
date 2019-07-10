@@ -13,7 +13,7 @@ export class FoodTableComponent {
   @Input()
   path: string;
 
-  @ViewChild('lfTable') lfTable: TableComponent;
+  @ViewChild('lfTable', {static: false}) lfTable: TableComponent;
 
   @computed
   public get subTotalName() {
