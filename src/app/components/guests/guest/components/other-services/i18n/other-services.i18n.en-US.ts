@@ -25,11 +25,9 @@ export const OTHER_SERVICES_I18N_EN_US = LfI18n.mergeTranslations({
   },
 
   '/guests/?/otherServices/h4ComputedNumber': {
+    /*TODO CP5: Let´s noe add a decimal and thousands separators decorator and a sufix " $"*/
     [I18N_VALUE_LABEL_KEY]: 'Total Price',
     isDisabled: true,
     legend: 'Total Price',
-    decimalSeparator: ',',
-    [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '.',
-    suffix: ' $',
   },
 });

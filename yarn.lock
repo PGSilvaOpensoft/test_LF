@@ -193,34 +193,34 @@
   dependencies:
     tslib "^1.9.0"
 
-"@lightweightform/bootstrap-theme@4.0.0-lf-restructure.c5087706":
-  version "4.0.0-lf-restructure.c5087706"
-  resolved "https://registry.yarnpkg.com/@lightweightform/bootstrap-theme/-/bootstrap-theme-4.0.0-lf-restructure.c5087706.tgz#b83a3978f327e2ec4eaa300f5dca6efb6b933843"
+"@lightweightform/bootstrap-theme@4.0.0-beta.8":
+  version "4.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@lightweightform/bootstrap-theme/-/bootstrap-theme-4.0.0-beta.8.tgz#b83a3978f327e2ec4eaa300f5dca6efb6b933843"
   dependencies:
-    "@lightweightform/core" "4.0.0-lf-restructure.c5087706"
-    "@lightweightform/storage" "^4.0.0-lf-restructure.c5087706"
+    "@lightweightform/core" "^4.0.0-beta.8"
+    "@lightweightform/storage" "^4.0.0-beta.8"
     bootstrap "^4.1.1"
     font-awesome "^4.7.0"
     jquery "^3.3.1"
     popper.js "^1.14.3"
 
-"@lightweightform/core@4.0.0-lf-restructure.c5087706":
-  version "4.0.0-lf-restructure.c5087706"
-  resolved "https://registry.yarnpkg.com/@lightweightform/core/-/core-4.0.0-lf-restructure.c5087706.tgz#0bb080ef047ff80ac1cf55d528ed648c85df01e5"
+"@lightweightform/core@4.0.0-beta.8":
+  version "4.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@lightweightform/core/-/core-4.0.0-beta.8.tgz#0bb080ef047ff80ac1cf55d528ed648c85df01e5"
   dependencies:
-    "@lightweightform/storage" "^4.0.0-lf-restructure.c5087706"
+    "@lightweightform/storage" "^4.0.0-beta.8"
 
-"@lightweightform/core@^4.0.0-lf-restructure.c5087706":
+"@lightweightform/core@^4.0.0-beta.8":
   version "4.0.0-lf-restructure-alpha.1"
   resolved "https://registry.yarnpkg.com/@lightweightform/core/-/core-4.0.0-lf-restructure-alpha.1.tgz#92871292f68e4ecefab979d00473238ef68f74a0"
   dependencies:
     "@lightweightform/storage" "^4.0.0-lf-restructure-alpha.1"
 
-"@lightweightform/storage@4.0.0-lf-restructure.c5087706":
-  version "4.0.0-lf-restructure.c5087706"
-  resolved "https://registry.yarnpkg.com/@lightweightform/storage/-/storage-4.0.0-lf-restructure.c5087706.tgz#2d98960dfe4093a8da341b14ad88d25a6d5c76d2"
+"@lightweightform/storage@4.0.0-beta.8":
+  version "4.0.0-beta.8"
+  resolved "https://registry.yarnpkg.com/@lightweightform/storage/-/storage-4.0.0-beta.8.tgz#2d98960dfe4093a8da341b14ad88d25a6d5c76d2"
 
-"@lightweightform/storage@^4.0.0-lf-restructure.c5087706", "@lightweightform/storage@^4.0.0-lf-restructure-alpha.1":
+"@lightweightform/storage@^4.0.0-beta.8", "@lightweightform/storage@^4.0.0-lf-restructure-alpha.1":
   version "4.0.0-lf-restructure-alpha.1"
   resolved "https://registry.yarnpkg.com/@lightweightform/storage/-/storage-4.0.0-lf-restructure-alpha.1.tgz#f459dfaa00ea3f5ac8d010b215938b7bcce118d8"
 
