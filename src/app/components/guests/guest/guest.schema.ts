@@ -14,9 +14,9 @@ export const guestSchema = recordSchema(
   {
     name: stringSchema({}),
     birthDate: dateSchema({
-      validate: has18PlusYears,
       isRequired: true,
       isNullable: true,
+      validate: has18PlusYears,
     }),
     email: stringSchema({
       validate: emailValidator,

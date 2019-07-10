@@ -23,7 +23,6 @@ export const foodTableSchema: (string) => object = path => {
           isInteger: false,
           computedValue: computedPrice(),
           isNullable: true,
-          isClientOnly: false,
         }),
       }),
     ),
@@ -31,7 +30,6 @@ export const foodTableSchema: (string) => object = path => {
       isInteger: false,
       computedValue: subTotal(path),
       isNullable: true,
-      isClientOnly: false,
     }),
   };
 };

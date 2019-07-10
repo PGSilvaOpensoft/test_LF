@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { FoodTableComponent } from './food-table.component';
+import {FoodTableComponent} from './food-table.component';
 
 describe('FoodTableComponent', () => {
   let component: FoodTableComponent;
@@ -8,9 +8,8 @@ describe('FoodTableComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FoodTableComponent ]
-    })
-    .compileComponents();
+      declarations: [FoodTableComponent],
+    }).compileComponents();
   }));
 
   beforeEach(() => {
