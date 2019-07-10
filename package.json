@@ -23,7 +23,6 @@
     "@angular/platform-browser-dynamic": "~8.1.0",
     "@angular/router": "~8.1.0",
     "@lightweightform/bootstrap-theme": "4.0.0-dev.15",
-    "@lightweightform/xml-serializer": "4.0.0-dev.15",
     "@lightweightform/core": "4.0.0-dev.15",
     "@lightweightform/storage": "4.0.0-dev.15",
     "@types/bootstrap": "4.3.0",
