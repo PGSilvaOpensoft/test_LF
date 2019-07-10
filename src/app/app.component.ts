@@ -1,8 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
-import {LfFileStorage, LfStorage, LfI18n} from '@lightweightform/core';
-import {
-  AppComponent as LfAppComponent /* ModalComponent*/,
-} from '@lightweightform/bootstrap-theme';
+import {LfStorage, LfI18n, LfFileStorage} from '@lightweightform/core';
+import {AppComponent as LfAppComponent} from '@lightweightform/bootstrap-theme';
 
 @Component({
   selector: 'sc-root',
@@ -15,16 +13,8 @@ export class AppComponent {
       id: 'save',
       style: 'outline-secondary',
       icon: 'save',
-      callback: async () => {
-        const dateStr = new Date().toISOString().replace(/:|\./g, '-');
-        const fileName = `self-check-in-${dateStr}.json`;
-        try {
-          await this.lfFileStorage.saveToFile('/', fileName);
-          console.log('Value saved successfully');
-          this.lfStorage.setPristine('/');
-        } catch (err) {
-          console.error('Error saving file:', err);
-        }
+      callback: () => {
+        alert('save not implemented'); //TODO CP6: Implement save action
       },
     },
     {
@@ -32,61 +22,27 @@ export class AppComponent {
       style: 'outline-secondary',
       icon: 'folder-open',
       isDisabled: !this.lfFileStorage.loadIsSupported,
-      callback: async () => {
-        try {
-          await this.lfFileStorage.loadFromFile('/');
-          console.log('Value loaded successfully');
-        } catch (err) {
-          console.error('Error loading file:', err);
-        }
+      callback: () => {
+        alert('load not implemented'); //TODO CP6: Implement load action
       },
     },
     {
       id: 'validate',
       style: 'outline-danger',
       icon: 'check-square-o',
-      callback: () => this.lfApp.validate(),
+      callback: () => alert('validate not implemented'), //TODO CP6: Implement validate action
     },
     {
-      id: 'language',
-      style: 'outline-success',
-      icon: 'language',
-      options: this.lfI18n.languages.map(lang => ({id: lang, value: lang})),
-      callback: lang => this.lfI18n.setCurrentLanguage(lang),
-    },
-    {
-      id: 'submit',
       text: 'Submit',
       style: 'outline-success',
       icon: 'send',
       callback: () => {
-        this.submit();
+        alert('submit not implemented'); //TODO CP6: Implement submit action
       },
     },
-    /* {
-      id: 'schema',
-      label: 'Schema',
-      faIcon: 'bug',
-      isVertical: true,
-      callback: () => {
-        this._schemaModal.show();
-      },
-    },
-    {
-      id: 'value',
-      label: 'Value',
-      faIcon: 'bug',
-      isVertical: true,
-      callback: () => {
-        this._valueModal.show();
-      },
-    },*/
   ];
 
   @ViewChild(LfAppComponent, {static: false}) private lfApp: LfAppComponent;
-  /*Modals components*/
-  //@ViewChild('valueModal') protected _valueModal: ModalComponent;
-  //@ViewChild('schemaModal') protected _schemaModal: ModalComponent;
 
   constructor(
     public lfStorage: LfStorage,
@@ -95,7 +51,8 @@ export class AppComponent {
   ) {}
 
   submit() {
-    if (!this.lfStorage.hasErrors()) {
+    if (this.lfStorage.shouldShowError()) {
+      console.log(this.lfStorage.shouldShowError());
       fetch('https://selfcheckin.opensoft.pt/reservations', {
         method: 'POST',
         headers: {

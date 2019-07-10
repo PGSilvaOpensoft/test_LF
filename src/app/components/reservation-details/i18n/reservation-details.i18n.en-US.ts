@@ -18,8 +18,8 @@ export const RESERVATION_DETAILS_I18N_EN_US = LfI18n.mergeTranslations({
   },
 
   '/reservationDetails/phoneNumber': {
-    [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     code: '1.2',
+    [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     [I18N_VALUE_LABEL_KEY]: 'Phone Number',
   },
 
@@ -29,14 +29,14 @@ export const RESERVATION_DETAILS_I18N_EN_US = LfI18n.mergeTranslations({
   },
 
   '/reservationDetails/hourOfArrival': {
-    [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     code: '1.4',
+    [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     [I18N_VALUE_LABEL_KEY]: 'Hour of Arrival',
   },
 
   '/reservationDetails/flightNumber': {
-    [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     code: '1.5',
+    [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     [I18N_VALUE_LABEL_KEY]: 'Flight Number',
   },
 });

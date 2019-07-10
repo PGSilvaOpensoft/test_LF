@@ -20,17 +20,15 @@ import {
   LfJsonSerializer,
 } from '@lightweightform/core';
 import {MobxAngularModule} from 'mobx-angular';
-
 import {appSchema} from './app.schema';
 import {AppRoutingModule} from './app-routing.module';
-
-import {APP_I18N} from './app.i18n';
 import {GuestComponent} from './components/guests/guest/guest.component';
 import {OtherServicesComponent} from './components/guests/guest/components/other-services/other-services.component';
 import {FoodTableComponent} from './components/guests/guest/components/food/food-table/food-table.component';
 import {FoodComponent} from './components/guests/guest/components/food/food.component';
 import {AccommodationComponent} from './components/reservation-details/accommodation/accomodation.component';
 import {reservationDetailsComponent} from './components/reservation-details/reservation-details.component';
+import {APP_I18N} from './app.i18n';
 
 @NgModule({
   imports: [

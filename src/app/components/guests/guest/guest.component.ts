@@ -1,6 +1,6 @@
 import {Component} from '@angular/core';
-import {LfRouter} from '@lightweightform/core';
-import {computed} from 'mobx';
+import { LfRouter } from '@lightweightform/core';
+import { computed } from 'mobx';
 
 @Component({
   selector: 'sc-guests',
@@ -8,6 +8,7 @@ import {computed} from 'mobx';
   styleUrls: ['./guest.component.scss'],
 })
 export class GuestComponent {
+
   constructor(private lfRouter: LfRouter) {}
   @computed
   public get index() {
