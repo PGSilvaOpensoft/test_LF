@@ -12,6 +12,12 @@ import {
   LF_APP_SCHEMA,
   LF_CORE_SERVICES,
   LF_I18N_LANGUAGE_QUERY_PARAM,
+  LfStorage,
+  LfI18n,
+  LfRouter,
+  LfFileStorage,
+  LfSerializer,
+  LfJsonSerializer,
 } from '@lightweightform/core';
 import {MobxAngularModule} from 'mobx-angular';
 
@@ -44,6 +50,10 @@ import {reservationDetailsComponent} from './components/reservation-details/rese
     reservationDetailsComponent,
   ],
   providers: [
+    LfStorage,
+    LfI18n,
+    LfRouter,
+    LfFileStorage,
     {provide: LF_APP_SCHEMA, useValue: appSchema},
     {
       provide: LF_APP_I18N,
@@ -52,6 +62,7 @@ import {reservationDetailsComponent} from './components/reservation-details/rese
     {provide: LF_I18N_LANGUAGE_QUERY_PARAM, useValue: 'l'},
     LF_CORE_SERVICES,
     LF_BOOTSTRAP_THEME_SERVICES,
+    {provide: LfSerializer, useClass: LfJsonSerializer},
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

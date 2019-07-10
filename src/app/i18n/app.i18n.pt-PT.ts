@@ -15,6 +15,8 @@ export const I18N_SELF_CHECK_IN_PT_PT = LfI18n.mergeTranslations({
       submit: 'Submeter',
     },
     actionsMenuOptions: {
+      save: {json: 'JSON', xml: 'XML'},
+      load: {json: 'JSON', xml: 'XML'},
       language: {
         'en-US': 'Inglês',
         'pt-PT': 'Português',

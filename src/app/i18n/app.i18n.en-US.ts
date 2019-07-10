@@ -17,6 +17,8 @@ export const I18N_SELF_CHECK_IN_EN_US = LfI18n.mergeTranslations({
       // showValue: 'show Value',
     },
     actionsMenuOptions: {
+      save: {json: 'JSON', xml: 'XML'},
+      load: {json: 'JSON', xml: 'XML'},
       language: {
         'en-US': 'English',
         'pt-PT': 'Portuguese',
