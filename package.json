@@ -36,8 +36,7 @@
     "zone.js": "^0.9.1",
     "lodash": "4.17.14",
     "bootstrap": "4.3.1",
-    "popper.js": "^1.14.7",
-    "shelljs": "0.8.3"
+    "popper.js": "^1.14.7"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^0.801.1",
