@@ -1,4 +1,4 @@
-<lf-form path="guests/{{ index }}/food" *mobxAutorun>
+<lf-form path="guests/{{ index }}/food">
   <br />
   <sc-food-table #breakfastTable path="breakfastTable"></sc-food-table>
   <br />
@@ -7,6 +7,5 @@
   <sc-food-table #dinnerTable path="dinnerTable"></sc-food-table>
   <br />
   <lf-textarea path="comments"></lf-textarea>
-  <!--TODO CP5: select the number of decimal number using [scale] = ??-->
-  <lf-number path="totalPrice"></lf-number>
+  <lf-number path="totalPrice" [scale]="2"></lf-number>
 </lf-form>

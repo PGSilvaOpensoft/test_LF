@@ -4,39 +4,40 @@ import {
   I18N_VALUE_LABEL_KEY,
 } from '@lightweightform/bootstrap-theme';
 
-export const RESERVATION_DETAILS_I18N_EN_US = LfI18n.mergeTranslations({
+export const RESERVATION_DETAILS_I18N_PT_PT = LfI18n.mergeTranslations({
   '/reservationDetails': {
-    [I18N_VALUE_LABEL_KEY]: 'Reservation Details',
+    [I18N_VALUE_LABEL_KEY]: 'Detalhes da Reserva',
   },
 
   '/reservationDetails/email': {
     code: '1.1',
     [I18N_VALUE_LABEL_KEY]: 'E-mail',
     validations: {
-      INVALID_EMAIL: 'The E-mail is invalid.',
+      INVALID_EMAIL: 'O E-mail inserido não está correto.',
     },
   },
 
   '/reservationDetails/phoneNumber': {
     [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     code: '1.2',
-    [I18N_VALUE_LABEL_KEY]: 'Phone Number',
+    [I18N_VALUE_LABEL_KEY]: 'Contacto Telefónico',
+    minSize: 9,
   },
 
   '/reservationDetails/checkInOut': {
     code: '1.3',
-    [I18N_VALUE_LABEL_KEY]: 'Check-In/Check-Out',
+    [I18N_VALUE_LABEL_KEY]: 'Entrada/Saída',
   },
 
   '/reservationDetails/hourOfArrival': {
     [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     code: '1.4',
-    [I18N_VALUE_LABEL_KEY]: 'Hour of Arrival',
+    [I18N_VALUE_LABEL_KEY]: 'Hora de Chegada',
   },
 
   '/reservationDetails/flightNumber': {
     [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '',
     code: '1.5',
-    [I18N_VALUE_LABEL_KEY]: 'Flight Number',
+    [I18N_VALUE_LABEL_KEY]: 'Número do Voo',
   },
 });

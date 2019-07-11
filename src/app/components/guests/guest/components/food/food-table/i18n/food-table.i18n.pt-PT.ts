@@ -3,46 +3,46 @@ import {I18N_NUMBER_THOUSANDS_SEPARATOR_KEY} from '@lightweightform/bootstrap-th
 
 const myColumnLabels = {
   index: '#',
-  date: 'Date',
-  typeOfFood: 'Type of Food',
-  price: 'Price',
+  date: 'Data',
+  typeOfFood: 'Tipo de Refeição',
+  price: 'Preço',
 };
 
-export const FOOD_TABLE_I18N_EN_US = LfI18n.mergeTranslations({
+export const FOOD_TABLE_I18N_PT_PT = LfI18n.mergeTranslations({
   '/guests/?/?/?': {
     columnLabels: myColumnLabels,
-    addRowActionText: 'Add Food',
-    removeRowsActionText: 'Remove Food',
-    noRowsText: 'No food added.',
+    addRowActionText: 'Adicionar Refeição',
+    removeRowsActionText: 'Remover Refeição',
+    noRowsText: 'Nenhuma refeição introduzida.',
   },
 
   '/guests/?/?/?/?/typeOfFood': {
     options: [
-      {code: '1', value: 'meat', label: 'Meat'},
-      {code: '2', value: 'fish', label: 'Fish'},
-      {code: '3', value: 'vegan', label: 'Vegan'},
+      {code: '1', value: 'meat', label: 'Carne'},
+      {code: '2', value: 'fish', label: 'Peixe'},
+      {code: '3', value: 'vegan', label: 'Vegetariano'},
     ],
   },
 
   '/guests/?/?/?/?/price': {
     decimalSeparator: ',',
     [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '.',
-    suffix: ' $',
+    suffix: ' €',
   },
 
   '/guests/?/?/subTotalbreakfastTable': {
     decimalSeparator: ',',
     [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '.',
-    suffix: ' $',
+    suffix: ' €',
   },
   '/guests/?/?/subTotallunchTable': {
     decimalSeparator: ',',
     [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '.',
-    suffix: ' $',
+    suffix: ' €',
   },
   '/guests/?/?/subTotaldinnerTable': {
     decimalSeparator: ',',
     [I18N_NUMBER_THOUSANDS_SEPARATOR_KEY]: '.',
-    suffix: ' $',
+    suffix: ' €',
   },
 });

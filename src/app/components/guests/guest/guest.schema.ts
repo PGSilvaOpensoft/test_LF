@@ -5,10 +5,10 @@ import {
   numberSchema,
   ValidationIssue,
 } from '@lightweightform/storage';
-import {foodSchema} from './components/food/food.schema';
-import {otherServicesSchema} from './components/other-services/other-services.schema';
 import {LfStorage} from '@lightweightform/core';
 import {moment} from 'ngx-bootstrap/chronos/test/chain';
+import {foodSchema} from './components/food/food.schema';
+import {otherServicesSchema} from './components/other-services/other-services.schema';
 
 export const guestSchema = recordSchema(
   {
@@ -31,7 +31,7 @@ export const guestSchema = recordSchema(
   {isForm: true},
 );
 
-function emailValidator(ctx: LfStorage): ValidationIssue | undefined {
+function emailValidator(ctx: LfStorage): ValidationIssue | void {
   const email = ctx.get();
   let emailRegExp = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   emailRegExp.test(email);

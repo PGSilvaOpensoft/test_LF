@@ -12,17 +12,25 @@ import {
   LF_APP_SCHEMA,
   LF_CORE_SERVICES,
   LF_I18N_LANGUAGE_QUERY_PARAM,
+  LfStorage,
+  LfI18n,
+  LfRouter,
+  LfFileStorage,
+  LfSerializer,
+  LfJsonSerializer,
 } from '@lightweightform/core';
 import {MobxAngularModule} from 'mobx-angular';
+
 import {appSchema} from './app.schema';
 import {AppRoutingModule} from './app-routing.module';
-import {AccommodationComponent} from './components/reservation-details/accommodation/accomodation.component';
+
+import {APP_I18N} from './app.i18n';
 import {GuestComponent} from './components/guests/guest/guest.component';
-import {FoodComponent} from './components/guests/guest/components/food/food.component';
 import {OtherServicesComponent} from './components/guests/guest/components/other-services/other-services.component';
 import {FoodTableComponent} from './components/guests/guest/components/food/food-table/food-table.component';
+import {FoodComponent} from './components/guests/guest/components/food/food.component';
+import {AccommodationComponent} from './components/reservation-details/accommodation/accomodation.component';
 import {reservationDetailsComponent} from './components/reservation-details/reservation-details.component';
-import {APP_I18N} from './app.i18n';
 
 @NgModule({
   imports: [
@@ -42,6 +50,10 @@ import {APP_I18N} from './app.i18n';
     reservationDetailsComponent,
   ],
   providers: [
+    LfStorage,
+    LfI18n,
+    LfRouter,
+    LfFileStorage,
     {provide: LF_APP_SCHEMA, useValue: appSchema},
     {
       provide: LF_APP_I18N,
@@ -50,6 +62,7 @@ import {APP_I18N} from './app.i18n';
     {provide: LF_I18N_LANGUAGE_QUERY_PARAM, useValue: 'l'},
     LF_CORE_SERVICES,
     LF_BOOTSTRAP_THEME_SERVICES,
+    {provide: LfSerializer, useClass: LfJsonSerializer},
   ],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
