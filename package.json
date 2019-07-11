@@ -16,6 +16,7 @@
     "@angular/animations": "^8.1.1",
     "@angular/cdk": "^8.0.2",
     "@angular/common": "^8.1.1",
+    "@angular/compiler": "8.1.1",
     "@angular/core": "^8.1.1",
     "@angular/forms": "^8.1.1",
     "@angular/platform-browser": "^8.1.1",
@@ -39,7 +40,6 @@
     "popper.js": "^1.14.7"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.801.1",
     "@angular/compiler": "8.1.1",
     "@angular/language-service": "^8.1.1",
     "@types/jquery": "3.3.30",
