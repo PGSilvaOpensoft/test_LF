@@ -31,7 +31,7 @@
     "mobx": "^5.9.4",
     "mobx-angular": "3.0.1",
     "mobx-utils": "^5.4.1",
-    "ngx-bootstrap": "~5.1.0",
+    "ngx-bootstrap": "5.1.1",
     "rxjs": "^6.4.0",
     "zone.js": "^0.9.1"
   },
